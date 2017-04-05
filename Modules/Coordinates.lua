@@ -15,6 +15,14 @@ L:RegisterTranslations("enUS", function() return {
 	["Player:"] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Coordinates"] = "Координаты",
+	["Module to add coordinates to the bottom of the world map of the player and the cursor."] = "Модуль добавляет координаты игрока и курсора в нижнюю часть карты.",
+	
+	["Cursor:"] = "Курсор",
+	["Player:"] = "Игрок",
+} end)
+
 L:RegisterTranslations("deDE", function() return {
 --	["Coordinates"] = true,
 --	["Module to add coordinates to the bottom of the world map of the player and the cursor."] = true,

@@ -1,16 +1,16 @@
-﻿--[[
-Name: Babble-Zone-2.2
-Revision: $Rev: 15636 $
-Author(s): ckknight (ckknight@gmail.com)
-Website: http://ckknight.wowinterface.com/
-Documentation: http://wiki.wowace.com/index.php/Babble-Zone-2.2
-SVN: http://svn.wowace.com/root/trunk/Babble-2.2/Babble-Zone-2.2
-Description: A library to provide localizations for zones.
-Dependencies: AceLibrary, AceLocale-2.2
+--[[
+	Name: Babble-Zone-2.2
+	Revision: $Rev: 17779 $
+	Author(s): ckknight (ckknight@gmail.com)
+	Website: http://ckknight.wowinterface.com/
+	Documentation: http://wiki.wowace.com/index.php/Babble-Zone-2.2
+	SVN: http://svn.wowace.com/root/trunk/Babble-2.2/Babble-Zone-2.2
+	Description: A library to provide localizations for zones.
+	Dependencies: AceLibrary, AceLocale-2.2
 ]]
 
 local MAJOR_VERSION = "Babble-Zone-2.2"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 15636 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 17779 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 
@@ -42,8 +42,6 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Blackrock Depths"] = true,
 		["Blackrock Mountain"] = true,
 		["Blackrock Spire"] = true,
-    ["Lower Blackrock Spire"] = true,
-    ["Upper Blackrock Spire"] = true,
 		["Blackwing Lair"] = true,
 		["Blasted Lands"] = true,
 		["Booty Bay"] = true,
@@ -62,6 +60,7 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Durotar"] = true,
 		["Duskwood"] = true,
 		["Dustwallow Marsh"] = true,
+		["Eastern Kingdoms"] = true,
 		["Eastern Plaguelands"] = true,
 		["Elwynn Forest"] = true,
 		["Everlook"] = true,
@@ -78,7 +77,9 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["The Hinterlands"] = true,
 		["Hyjal"] = true,
 		["Ironforge"] = true,
+		["Kalimdor"] = true,
 		["Loch Modan"] = true,
+		["Lower Blackrock Spire"] = true,
 		["Maraudon"] = true,
 		["Menethil Harbor"] = true,
 		["Molten Core"] = true,
@@ -116,6 +117,7 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Uldaman"] = true,
 		["Un'Goro Crater"] = true,
 		["Undercity"] = true,
+		["Upper Blackrock Spire"] = true,
 		["Wailing Caverns"] = true,
 		["Warsong Gulch"] = true,
 		["Western Plaguelands"] = true,
@@ -124,7 +126,7 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Winterspring"] = true,
 		["Zul'Farrak"] = true,
 		["Zul'Gurub"] = true,
-
+		
 		-- Burning Crusade
 		
 		-- Subzones used for displaying instances.
@@ -133,7 +135,7 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Auchindoun"] = true,
 		["The Bone Wastes"] = true, -- Substitute for Auchindoun, since this is what shows on the minimap.
 		["Coilfang Reservoir"] = true, -- Not used yet.
-
+		
 		["Azuremyst Isle"] = true,
 		["Bloodmyst Isle"] = true,
 		["Eversong Woods"] = true,
@@ -174,6 +176,157 @@ BabbleZone:RegisterTranslations("enUS", function()
 	}
 end)
 
+BabbleZone:RegisterTranslations("ruRU", function()
+	return {
+		["Ahn'Qiraj"] = "Ан'Кираж",
+		["Alterac Mountains"] = "Альтеракские горы",
+		["Alterac Valley"] = "Альтеракская долина",
+		["Arathi Basin"] = "Низина Арати",
+		["Arathi Highlands"] = "Нагорье Арати",
+		["Ashenvale"] = "Ясеневый лес",
+		["Auberdine"] = "Аубердин",
+		["Azshara"] = "Азшара",
+		["Badlands"] = "Бесплодные земли",
+		["The Barrens"] = "Степи",
+		["Blackfathom Deeps"] = "Непроглядная Пучина",
+		["Blackrock Depths"] = "Глубины Черной горы",
+		["Blackrock Mountain"] = "Черная гора",
+		["Blackrock Spire"] = "Пик Черной горы",
+		["Blackwing Lair"] = "Логово Крыла Тьмы",
+		["Blasted Lands"] = "Выжженные земли",
+		["Booty Bay"] = "Пиратская Бухта",
+		["Burning Steppes"] = "Пылающие степи",
+		["Darkshore"] = "Темные берега",
+		["Darnassus"] = "Дарнас",
+		["The Deadmines"] = "Мертвые копи",
+		["Deadwind Pass"] = "Перевал Мертвого Ветра",
+		["Deeprun Tram"] = "Подземный поезд",
+		["Desolace"] = "Пустоши",
+		["Dire Maul"] = "Забытый Город",
+		["Dire Maul (East)"] = "Забытый город (Восток)",
+		["Dire Maul (West)"] = "Забытый город (Запад)",
+		["Dire Maul (North)"] = "Забытый город (Север)",
+		["Dun Morogh"] = "Дун Морог",
+		["Durotar"] = "Дуротар",
+		["Duskwood"] = "Сумеречный лес",
+		["Dustwallow Marsh"] = "Пылевые топи",
+		["Eastern Kingdoms"] = "Восточные королевства",
+		["Eastern Plaguelands"] = "Восточные Чумные земли",
+		["Elwynn Forest"] = "Элвиннский лес",
+		["Everlook"] = "Круговзор",
+		["Felwood"] = "Оскверненный лес",
+		["Feralas"] = "Фералас",
+		["The Forbidding Sea"] = "Зловещее море",
+		["Gadgetzan"] = "Прибамбасск",
+		["Gates of Ahn'Qiraj"] = "Врата Ан'Киража",
+		["Gnomeregan"] = "Гномреган",
+		["The Great Sea"] = "Великое море",
+		["Grom'gol Base Camp"] = "Лагерь Гром'гол",
+		["Hall of Legends"] = "Зал Легенд",
+		["Hillsbrad Foothills"] = "Предгорья Хилсбрада",
+		["The Hinterlands"] = "Внутренние земли",
+		["Hyjal"] = "Хиджал",
+		["Ironforge"] = "Стальгорн",
+		["Kalimdor"] = "Калимдор",
+		["Loch Modan"] = "Лок Модан",
+		["Lower Blackrock Spire"] = "Низина Черной горы",
+		["Maraudon"] = "Мародон",
+		["Menethil Harbor"] = "Гавань Менетилов",
+		["Molten Core"] = "Огненные Недра",
+		["Moonglade"] = "Лунная поляна",
+		["Mulgore"] = "Мулгор",
+		["Naxxramas"] = "Наксрамас",
+		["Onyxia's Lair"] = "Логово Ониксии",
+		["Orgrimmar"] = "Оргриммар",
+		["Ratchet"] = "Кабестан",
+		["Ragefire Chasm"] = "Огненная Пропасть",
+		["Razorfen Downs"] = "Курганы Иглошкурых",
+		["Razorfen Kraul"] = "Лабиринты Иглошкурых",
+		["Redridge Mountains"] = "Красногорье",
+		["Ruins of Ahn'Qiraj"] = "Руины Ан'Киража",
+		["Scarlet Monastery"] = "Монастырь Алого ордена",
+		["Scholomance"] = "Некроситет",
+		["Searing Gorge"] = "Тлеющее ущелье",
+		["Shadowfang Keep"] = "Крепость Темного Клыка",
+		["Silithus"] = "Силитус",
+		["Silverpine Forest"] = "Серебряный бор",
+		["The Stockade"] = "Тюрьма",
+		["Stonetalon Mountains"] = "Когтистые горы",
+		["Stormwind City"] = "Штормград",
+		["Stranglethorn Vale"] = "Тернистая долина",
+		["Stratholme"] = "Стратхольм",
+		["Swamp of Sorrows"] = "Болото Печали",
+		["Tanaris"] = "Танарис",
+		["Teldrassil"] = "Тельдрассил",
+		["Temple of Ahn'Qiraj"] = "Храм Ан'Кираж",
+		["The Temple of Atal'Hakkar"] = "Храм Атал'Хаккара",
+		["Theramore Isle"] = "Остров Терамор",
+		["Thousand Needles"] = "Тысяча Игл",
+		["Thunder Bluff"] = "Громовой Утес",
+		["Tirisfal Glades"] = "Тирисфальские леса",
+		["Uldaman"] = "Ульдаман",
+		["Un'Goro Crater"] = "Кратер Ун'Горо",
+		["Undercity"] = "Подгород",
+		["Upper Blackrock Spire"] = "Вершина Черной горы",
+		["Wailing Caverns"] = "Пещеры Стенаний",
+		["Warsong Gulch"] = "Ущелье Песни Войны",
+		["Western Plaguelands"] = "Западные Чумные земли",
+		["Westfall"] = "Западный Край",
+		["Wetlands"] = "Болотина",
+		["Winterspring"] = "Зимние Ключи",
+		["Zul'Farrak"] = "Зул'Фаррак",
+		["Zul'Gurub"] = "Зул'Гуруб",
+		
+		-- Burning Crusade
+		
+		-- Subzones used for displaying instances.
+		["Plaguewood"] = "Проклятый лес",
+		["Hellfire Citadel"] = "Цитадель Адского Пламени",
+		["Auchindoun"] = "Аукиндон",
+		["The Bone Wastes"] = "Костяные пустоши", -- Substitute for Auchindoun, since this is what shows on the minimap.
+		["Coilfang Reservoir"] = "Резервуар Кривого Клыка", -- Not used yet.
+		
+		["Azuremyst Isle"] = "Остров Лазурной Дымки",
+		["Bloodmyst Isle"] = "Остров Кровавой Дымки",
+		["Eversong Woods"] = "Леса Вечной Песни",
+		["Ghostlands"] = "Призрачные земли",
+		["The Exodar"] = "Экзодар",
+		["Silvermoon City"] = "Луносвет",
+		["Shadowmoon Valley"] = "Долина Призрачной Луны",
+		["Black Temple"] = "Черный храм",
+		["Terokkar Forest"] = "Лес Тероккар",
+		["Auchenai Crypts"] = "Аукенайские гробницы",
+		["Mana-Tombs"] = "Гробницы Маны",
+		["Shadow Labyrinth"] = "Темный лабиринт",
+		["Sethekk Halls"] = "Сетеккские залы",
+		["Hellfire Peninsula"] = "Полуостров Адского Пламени",
+		["The Dark Portal"] = "Темный портал",
+		["Hellfire Ramparts"] = "Бастионы Адского Пламени",
+		["The Blood Furnace"] = "Кузня Крови",
+		["The Shattered Halls"] = "Разрушенные залы",
+		["Magtheridon's Lair"] = "Логово Магтеридона",
+		["Nagrand"] = "Награнд",
+		["Zangarmarsh"] = "Зангартопь",
+		["The Slave Pens"] = "Узилище",
+		["The Underbog"] = "Нижетопь",
+		["The Steamvault"] = "Паровое подземелье",
+		["Serpentshrine Cavern"] = "Змеиное святилище",
+		["Blade's Edge Mountains"] = "Острогорье",
+		["Gruul's Lair"] = "Логово Груула",
+		["Netherstorm"] = "Пустоверть",
+		["Tempest Keep"] = "Крепость Бурь",
+		["The Mechanar"] = "Механар",
+		["The Botanica"] = "Ботаника",
+		["The Arcatraz"] = "Аркатрац",
+		["Eye of the Storm"] = "Око Бури",
+		["Shattrath City"] = "Шаттрат",
+		["Karazhan"] = "Каражан",
+		["Caverns of Time"] = "Пещеры Времени",
+		["Zul'Aman"] = "Зул'Аман",
+	}
+end)
+
+local expansion = loadstring("return function(...) return ... end") and true or false
 BabbleZone:RegisterTranslations("deDE", function()
 	return {
 		["Ahn'Qiraj"] = "Ahn'Qiraj",
@@ -190,8 +343,6 @@ BabbleZone:RegisterTranslations("deDE", function()
 		["Blackrock Depths"] = "Blackrocktiefen",
 		["Blackrock Mountain"] = "Der Blackrock",
 		["Blackrock Spire"] = "Blackrockspitze",
-    ["Lower Blackrock Spire"] = true,
-    ["Upper Blackrock Spire"] = true,
 		["Blackwing Lair"] = "Pechschwingenhort",
 		["Blasted Lands"] = "Verw\195\188stete Lande",
 		["Booty Bay"] = "Booty Bay",
@@ -203,6 +354,9 @@ BabbleZone:RegisterTranslations("deDE", function()
 		["Deeprun Tram"] = "Die Tiefenbahn",
 		["Desolace"] = "Desolace",
 		["Dire Maul"] = "D\195\188sterbruch",
+		["Dire Maul (North)"] = "D\195\188sterbruch (Nord)",
+		["Dire Maul (East)"] = "D\195\188sterbruch (Ost)",
+		["Dire Maul (West)"] = "D\195\188sterbruch (West)",
 		["Dun Morogh"] = "Dun Morogh",
 		["Durotar"] = "Durotar",
 		["Duskwood"] = "D\195\164mmerwald",
@@ -222,8 +376,9 @@ BabbleZone:RegisterTranslations("deDE", function()
 		["Hillsbrad Foothills"] = "Vorgebirge von Hillsbrad",
 		["The Hinterlands"] = "Hinterland",
 		["Hyjal"] = "Hyjal",
-		["Ironforge"] = "Ironforge",
+		["Ironforge"] = expansion and "Eisenschmiede" or "Ironforge",
 		["Loch Modan"] = "Loch Modan",
+		["Lower Blackrock Spire"] = "Untere Blockrockspitze",
 		["Maraudon"] = "Maraudon",
 		["Menethil Harbor"] = "Menethil Hafen",
 		["Molten Core"] = "Geschmolzener Kern",
@@ -246,7 +401,7 @@ BabbleZone:RegisterTranslations("deDE", function()
 		["Silverpine Forest"] = "Silberwald",
 		["The Stockade"] = "Das Verlies",
 		["Stonetalon Mountains"] = "Steinkrallengebirge",
-		["Stormwind City"] = "Stormwind",
+		["Stormwind City"] = expansion and "Sturmwind" or "Stormwind",
 		["Stranglethorn Vale"] = "Schlingendorntal",
 		["Stratholme"] = "Stratholme",
 		["Swamp of Sorrows"] = "S\195\188mpfe des Elends",
@@ -261,6 +416,7 @@ BabbleZone:RegisterTranslations("deDE", function()
 		["Uldaman"] = "Uldaman",
 		["Un'Goro Crater"] = "Un'Goro-Krater",
 		["Undercity"] = "Undercity",
+		["Upper Blackrock Spire"] = "Obere Blackrockspitze",
 		["Wailing Caverns"] = "Die H\195\182hlen des Wehklagens",
 		["Warsong Gulch"] = "Warsongschlucht",
 		["Western Plaguelands"] = "Westliche Pestl\195\164nder",
@@ -269,42 +425,42 @@ BabbleZone:RegisterTranslations("deDE", function()
 		["Winterspring"] = "Winterspring",
 		["Zul'Farrak"] = "Zul'Farrak",
 		["Zul'Gurub"] = "Zul'Gurub",
-
+		
 		-- Burning Crusade
 		
 		-- Subzones used for displaying instances.
 		["Plaguewood"] = "Seuchenwald",
-		["Hellfire Citadel"] = "H\195\182llenfeuer Zitadelle",
+		["Hellfire Citadel"] = "H\195\182llenfeuerzitadelle",
 		["Auchindoun"] = "Auchindoun",
 		["The Bone Wastes"] = "Die Knochen-Vergeudungen", -- Substitute for Auchindoun, since this is what shows on the minimap.
 		["Coilfang Reservoir"] = "Spulenrei\195\159zahn Reservat",
-
-		["Azuremyst Isle"] = "Azurnebel Inseln",
-		["Bloodmyst Isle"] = "Blutnebel Inseln",
-		["Eversong Woods"] = "Immerlied W\195\164lder",
-		["Ghostlands"] = "Geisterl\195\164nder",
-		["The Exodar"] = "Das Exodar",
-		["Silvermoon City"] = "Silbermond Stadt",
+		
+		["Azuremyst Isle"] = "Azurmythosinsel",
+		["Bloodmyst Isle"] = "Blutmythosinsel",
+		["Eversong Woods"] = "Immersangwald",
+		["Ghostlands"] = "Geisterlande",
+		["The Exodar"] = "Die Exodar",
+		["Silvermoon City"] = "Silbermond",
 		["Shadowmoon Valley"] = "Schattenmondtal",
 		["Black Temple"] = "Schwarzer Tempel",
-		["Terokkar Forest"] = "Terokkar Wald",
+		["Terokkar Forest"] = "W\195\164lder von Terokkar",
 		["Auchenai Crypts"] = "Auchenai Krypten",
 		["Mana-Tombs"] = "Mana-Gr\195\164ber",
-		["Shadow Labyrinth"] = "Schatten Labyrinth",
+		["Shadow Labyrinth"] = "Schattenlabyrinth",
 		["Sethekk Halls"] = "Sethekk Hallen",
-		["Hellfire Peninsula"] = "H\195\182llenfeuer Halbinsel",
+		["Hellfire Peninsula"] = "H\195\182llenfeuerhalbinsel",
 		["The Dark Portal"] = "Das Dunkle Portal",
 		["Hellfire Ramparts"] = "H\195\182llenfeuer Ramteile",
 		["The Blood Furnace"] = "Der Blut-Ofen",
 		["The Shattered Halls"] = "Die Zerbrochenen Hallen",
 		["Magtheridon's Lair"] = "Magtheridon's Hort",
 		["Nagrand"] = "Nagrand",
-		["Zangarmarsh"] = "Zangarsumpf",
-		["The Slave Pens"] = "Die Sklaven Federn",
+		["Zangarmarsh"] = "Zangarmarschen",
+		["The Slave Pens"] = "Die Sklavenfedern",
 		["The Underbog"] = "Der Untersumpf",
 		["The Steamvault"] = "Die Dampfw\195\182lbung",
 		["Serpentshrine Cavern"] = "Schlangenschrein H\195\182hle",
-		["Blade's Edge Mountains"] = "Klingenrand Berge",
+		["Blade's Edge Mountains"] = "Schergrat",
 		["Gruul's Lair"] = "Gruul's Hort",
 		["Netherstorm"] = "Nethersturm",
 		["Tempest Keep"] = "Tempest Unterschlupf",
@@ -312,7 +468,7 @@ BabbleZone:RegisterTranslations("deDE", function()
 		["The Botanica"] = "Das Botanica",
 		["The Arcatraz"] = "Das Arcatraz",
 		["Eye of the Storm"] = "Auge des Sturms",
-		["Shattrath City"] = "Shattrath Stadt",
+		["Shattrath City"] = "Shattrath",
 		["Karazhan"] = "Karazhan",
 		["Caverns of Time"] = "Die H\195\182hlen der Zeit",
 		["Zul'Aman"] = "Zul'Aman",
@@ -335,8 +491,6 @@ BabbleZone:RegisterTranslations("frFR", function()
 		["Blackrock Depths"] = "Profondeurs de Blackrock",
 		["Blackrock Mountain"] = "Mont Blackrock",
 		["Blackrock Spire"] = "Pic Blackrock",
-    ["Lower Blackrock Spire"] = true,
-    ["Upper Blackrock Spire"] = true,
 		["Blackwing Lair"] = "Repaire de l'Aile noire",
 		["Blasted Lands"] = "Terres foudroy\195\169es (Blasted Lands)",
 		["Booty Bay"] = "Baie-du-Butin",
@@ -372,10 +526,11 @@ BabbleZone:RegisterTranslations("frFR", function()
 		["Hyjal"] = "Hyjal",
 		["Ironforge"] = "Ironforge",
 		["Loch Modan"] = "Loch Modan",
+		["Lower Blackrock Spire"] = "Pic de Blackrock inf\195\169rieur",
 		["Maraudon"] = "Maraudon",
 		["Menethil Harbor"] = "Port de Menethil",
 		["Molten Core"] = "C\197\147ur du Magma",
-		["Moonglade"] = "Reflet-de-lune",
+		["Moonglade"] = "Reflet-de-Lune (Moonglade)",
 		["Mulgore"] = "Mulgore",
 		["Onyxia's Lair"] = "Repaire d'Onyxia",
 		["Naxxramas"] = "Naxxramas",
@@ -386,7 +541,7 @@ BabbleZone:RegisterTranslations("frFR", function()
 		["Razorfen Kraul"] = "Kraal de Tranchebauge",
 		["Redridge Mountains"] = "Les Carmines (Redridge Mts)",
 		["Ruins of Ahn'Qiraj"] = "Ruines d'Ahn'Qiraj",
-		["Scarlet Monastery"] = "Monast\195\168re Ecarlate",
+		["Scarlet Monastery"] = "Monast\195\168re \195\169carlate",
 		["Scholomance"] = "Scholomance",
 		["Searing Gorge"] = "Gorge des Vents br\195\187lants (Searing Gorge)",
 		["Shadowfang Keep"] = "Donjon d'Ombrecroc",
@@ -409,6 +564,7 @@ BabbleZone:RegisterTranslations("frFR", function()
 		["Uldaman"] = "Uldaman",
 		["Un'Goro Crater"] = "Crat\195\168re d'Un'Goro",
 		["Undercity"] = "Undercity",
+		["Upper Blackrock Spire"] = "Pic de Blackrock sup\195\169rieur",
 		["Wailing Caverns"] = "Cavernes des lamentations",
 		["Warsong Gulch"] = "Goulet des Warsong",
 		["Western Plaguelands"] = "Maleterres de l'ouest (Western Plaguelands)",
@@ -417,7 +573,7 @@ BabbleZone:RegisterTranslations("frFR", function()
 		["Winterspring"] = "Berceau-de-l'Hiver (Winterspring)",
 		["Zul'Farrak"] = "Zul'Farrak",
 		["Zul'Gurub"] = "Zul'Gurub",
-
+		
 		-- Burning Crusade
 		
 		-- Subzones used for displaying instances.
@@ -426,7 +582,7 @@ BabbleZone:RegisterTranslations("frFR", function()
 		["Auchindoun"] = "Auchindoun",
 		--["The Bone Wastes"] = true, -- Substitute for Auchindoun, since this is what shows on the minimap.
 		["Coilfang Reservoir"] = "R\195\169servoir de Glissecroc", -- Not used yet.
-
+		
 		["Azuremyst Isle"] = "Ile de Brume-azure",
 		["Bloodmyst Isle"] = "Ile de Brume-sang",
 		["Eversong Woods"] = "Bois des Chants \195\169ternels",
@@ -483,8 +639,6 @@ BabbleZone:RegisterTranslations("zhCN", function()
 		["Blackrock Depths"] = "黑石深渊",
 		["Blackrock Mountain"] = "黑石山",
 		["Blackrock Spire"] = "黑石塔",
-    ["Lower Blackrock Spire"] = true,
-    ["Upper Blackrock Spire"] = true,
 		["Blackwing Lair"] = "黑翼之巢",
 		["Blasted Lands"] = "诅咒之地",
 		["Booty Bay"] = "藏宝海湾",
@@ -520,6 +674,7 @@ BabbleZone:RegisterTranslations("zhCN", function()
 		["Hyjal"] = "海加尔",
 		["Ironforge"] = "铁炉堡",
 		["Loch Modan"] = "洛克莫丹",
+		--		["Lower Blackrock Spire"] = true,
 		["Maraudon"] = "玛拉顿",
 		["Menethil Harbor"] = "米奈希尔港",
 		["Molten Core"] = "熔火之心",
@@ -557,6 +712,7 @@ BabbleZone:RegisterTranslations("zhCN", function()
 		["Uldaman"] = "奥达曼",
 		["Un'Goro Crater"] = "安戈洛环形山",
 		["Undercity"] = "幽暗城",
+		--		["Upper Blackrock Spire"] = true,
 		["Wailing Caverns"] = "哀嚎洞穴",
 		["Warsong Gulch"] = "战歌峡谷",
 		["Western Plaguelands"] = "西瘟疫之地",
@@ -565,32 +721,32 @@ BabbleZone:RegisterTranslations("zhCN", function()
 		["Winterspring"] = "冬泉谷",
 		["Zul'Farrak"] = "祖尔法拉克",
 		["Zul'Gurub"] = "祖尔格拉布",
-
+		
 		["Plaguewood"] = "病木林",
---		["Auchindoun"] = true,
---		["The Bone Wastes"] = true,
---		["Coilfang Reservoir"] = true,
-
---		["Auchenai Crypts"] = true,
---		["Mana-Tombs"] = true,
---		["Shadow Labyrinth"] = true,
---		["Sethekk Halls"] = true,
---		["Hellfire Ramparts"] = true,
---		["The Blood Furnace"] = true,
---		["The Shattered Halls"] = true,
---		["Magtheridon's Lair"] = true,
---		["The Slave Pens"] = true,
---		["The Underbog"] = true,
---		["The Steamvault"] = true,
---		["Serpentshrine Cavern"] = true,
---		["Blade's Edge Mountains"] = true,
---		["Gruul's Lair"] = true,
---		["Netherstorm"] = true,
---		["The Mechanar"] = true,
---		["The Botanica"] = true,
---		["The Arcatraz"] = true,
---		["Eye of the Storm"] = true,
-
+		--		["Auchindoun"] = true,
+		--		["The Bone Wastes"] = true,
+		--		["Coilfang Reservoir"] = true,
+		
+		--		["Auchenai Crypts"] = true,
+		--		["Mana-Tombs"] = true,
+		--		["Shadow Labyrinth"] = true,
+		--		["Sethekk Halls"] = true,
+		--		["Hellfire Ramparts"] = true,
+		--		["The Blood Furnace"] = true,
+		--		["The Shattered Halls"] = true,
+		--		["Magtheridon's Lair"] = true,
+		--		["The Slave Pens"] = true,
+		--		["The Underbog"] = true,
+		--		["The Steamvault"] = true,
+		--		["Serpentshrine Cavern"] = true,
+		--		["Blade's Edge Mountains"] = true,
+		--		["Gruul's Lair"] = true,
+		--		["Netherstorm"] = true,
+		--		["The Mechanar"] = true,
+		--		["The Botanica"] = true,
+		--		["The Arcatraz"] = true,
+		--		["Eye of the Storm"] = true,
+		
 		-- Burning Crusade
 		["Azuremyst Isle"] = "秘蓝岛", --some of the following tranlation need to checked after the release
 		["Bloodmyst Isle"] = "秘血岛",
@@ -615,7 +771,7 @@ BabbleZone:RegisterTranslations("zhCN", function()
 		["Shattrath City"] = "沙尔特拉城",
 		["Karazhan"] = "卡拉赞",
 		["Caverns of Time"] = "时光之穴",
---		["Zul'Aman"] = true,
+		--		["Zul'Aman"] = true,
 	}
 end)
 
@@ -635,8 +791,6 @@ BabbleZone:RegisterTranslations("zhTW", function()
 		["Blackrock Depths"] = "黑石深淵",
 		["Blackrock Mountain"] = "黑石山",
 		["Blackrock Spire"] = "黑石塔",
-    ["Lower Blackrock Spire"] = true,
-    ["Upper Blackrock Spire"] = true,
 		["Blackwing Lair"] = "黑翼之巢",
 		["Blasted Lands"] = "詛咒之地",
 		["Booty Bay"] = "藏寶海灣",
@@ -648,6 +802,9 @@ BabbleZone:RegisterTranslations("zhTW", function()
 		["Deeprun Tram"] = "礦道地鐵",
 		["Desolace"] = "淒涼之地",
 		["Dire Maul"] = "厄運之槌",
+		["Dire Maul (West)"] = "厄運之槌（西）",
+		["Dire Maul (North)"] = "厄運之槌（北）",
+		["Dire Maul (East)"] = "厄運之槌（東）",
 		["Dun Morogh"] = "丹莫洛",
 		["Durotar"] = "杜洛塔",
 		["Duskwood"] = "暮色森林",
@@ -669,6 +826,7 @@ BabbleZone:RegisterTranslations("zhTW", function()
 		["Hyjal"] = "海加爾山",
 		["Ironforge"] = "鐵爐堡",
 		["Loch Modan"] = "洛克莫丹",
+		["Lower Blackrock Spire"] = "黑石塔（下層）",
 		["Maraudon"] = "瑪拉頓",
 		["Menethil Harbor"] = "米奈希爾港",
 		["Molten Core"] = "熔火之心",
@@ -706,6 +864,7 @@ BabbleZone:RegisterTranslations("zhTW", function()
 		["Uldaman"] = "奧達曼",
 		["Un'Goro Crater"] = "安戈洛環形山",
 		["Undercity"] = "幽暗城",
+		["Upper Blackrock Spire"] = "黑石塔（上層）",
 		["Wailing Caverns"] = "哀嚎洞穴",
 		["Warsong Gulch"] = "戰歌峽谷",
 		["Western Plaguelands"] = "西瘟疫之地",
@@ -714,59 +873,59 @@ BabbleZone:RegisterTranslations("zhTW", function()
 		["Winterspring"] = "冬泉谷",
 		["Zul'Farrak"] = "祖爾法拉克",
 		["Zul'Gurub"] = "祖爾格拉布",
-
---		["Plaguewood"] = true,
---		["Auchindoun"] = true,
---		["The Bone Wastes"] = true,
---		["Coilfang Reservoir"] = true,
-
---		["Auchenai Crypts"] = true,
---		["Mana-Tombs"] = true,
---		["Shadow Labyrinth"] = true,
---		["Sethekk Halls"] = true,
---		["Hellfire Ramparts"] = true,
---		["The Blood Furnace"] = true,
---		["The Shattered Halls"] = true,
---		["Magtheridon's Lair"] = true,
---		["The Slave Pens"] = true,
---		["The Underbog"] = true,
---		["The Steamvault"] = true,
---		["Serpentshrine Cavern"] = true,
---		["Blade's Edge Mountains"] = true,
---		["Gruul's Lair"] = true,
---		["Netherstorm"] = true,
---		["The Mechanar"] = true,
---		["The Botanica"] = true,
---		["The Arcatraz"] = true,
---		["Eye of the Storm"] = true,
-
+		
+		["Plaguewood"] = "病木林",
+		--		["Auchindoun"] = true,
+		--		["The Bone Wastes"] = true,
+		--		["Coilfang Reservoir"] = true,
+		
+		--		["Auchenai Crypts"] = true,
+		--		["Mana-Tombs"] = true,
+		--		["Shadow Labyrinth"] = true,
+		--		["Sethekk Halls"] = true,
+		--		["Hellfire Ramparts"] = true,
+		--		["The Blood Furnace"] = true,
+		--		["The Shattered Halls"] = true,
+		--		["Magtheridon's Lair"] = true,
+		--		["The Slave Pens"] = true,
+		--		["The Underbog"] = true,
+		--		["The Steamvault"] = true,
+		--		["Serpentshrine Cavern"] = true,
+		--		["Blade's Edge Mountains"] = true,
+		--		["Gruul's Lair"] = true,
+		--		["Netherstorm"] = true,
+		--		["The Mechanar"] = true,
+		--		["The Botanica"] = true,
+		--		["The Arcatraz"] = true,
+		--		["Eye of the Storm"] = true,
+		
 		-- Burning Crusade
---		["Azuremyst Isle"] = true,
---		["Bloodmyst Isle"] = true,
---		["Eversong Woods"] = true,
---		["Ghostlands"] = true,
---		["The Exodar"] = true,
---		["Silvermoon City"] = true,
---		["Shadowmoon Valley"] = true,
---		["Black Temple"] = true,
---		["Terokkar Forest"] = true,
---		["Auchindoun"] = true,
---		["Hellfire Peninsula"] = true,
---		["Hellfire Citadel"] = true,
---		["Nagrand"] = true,
---		["Zangarmarsh"] = true,
---		["Coilfang Reservoir"] = true,
---		["Blade's Edge Mountains"] = true,
---		["Gruul's Lair"] = true,
---		["Netherstorm"] = true,
---		["Tempest Keep"] = true,
---		["Shattrath City"] = true,
---		["Karazhan"] = true,
+		["Azuremyst Isle"] = "秘藍島",
+		["Bloodmyst Isle"] = "秘血島",
+		["Eversong Woods"] = "永歌森林",
+		["Ghostlands"] = "鬼魂之地",
+		["The Exodar"] = "埃克索達",
+		["Shadowmoon Valley"] = "影月峽谷",
+		["Silvermoon City"] = "銀月城",
+		["Black Temple"] = "黑暗神廟",
+		["Terokkar Forest"] = "泰羅卡森林",
+		["Auchindoun"] = "奧金頓",
+		["Hellfire Peninsula"] = "地獄火半島",
+		["The Dark Portal"] = "黑暗之門",
+		["Hellfire Citadel"] = "地獄火堡壘",
+		["Nagrand"] = "納格蘭",
+		["Zangarmarsh"] = "贊加沼澤",
+		["Coilfang Reservoir"] = "盤牙湖泊",
+		["Blade's Edge Mountains"] = "刀鋒山",
+		["Gruul's Lair"] = "格魯爾的巢穴",
+		["Netherstorm"] = "虛空風暴",
+		["Tempest Keep"] = "風暴要塞",
+		["Shattrath City"] = "沙爾特拉城",
+		["Karazhan"] = "卡拉贊",
 		["Caverns of Time"] = "時光洞穴",
---		["Zul'Aman"] = true,
+		--		["Zul'Aman"] = true,
 	}
 end)
-
 
 BabbleZone:RegisterTranslations("koKR", function()
 	return {
@@ -784,8 +943,6 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Blackrock Depths"] = "검은바위 나락",
 		["Blackrock Mountain"] = "검은바위 산",
 		["Blackrock Spire"] = "검은바위 첨탑",
-    ["Lower Blackrock Spire"] = true,
-    ["Upper Blackrock Spire"] = true,
 		["Blackwing Lair"] = "검은날개 둥지",
 		["Blasted Lands"] = "저주받은 땅",
 		["Booty Bay"] = "무법항",
@@ -797,16 +954,16 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Deeprun Tram"] = "깊은굴 지하철",
 		["Desolace"] = "잊혀진 땅",
 		["Dire Maul"] = "혈투의 전장",
-		["Dire Maul (East)"] = "혈투의 전장 (동부)",
-		["Dire Maul (West)"] = "혈투의 전장 (서부)",
-		["Dire Maul (North)"] = "혈투의 전장 (북부)",
+		["Dire Maul (East)"] = "혈투의 전장 동부",
+		["Dire Maul (West)"] = "혈투의 전장 서부",
+		["Dire Maul (North)"] = "혈투의 전장 북부",
 		["Dun Morogh"] = "던 모로",
 		["Durotar"] = "듀로타",
 		["Duskwood"] = "그늘숲",
 		["Dustwallow Marsh"] = "먼지진흙 습지대",
 		["Eastern Plaguelands"] = "동부 역병지대",
 		["Elwynn Forest"] = "엘윈 숲",
-		["Everlook"] = "눈망루 마을", -- By turtl
+		["Everlook"] = "눈망루 마을",
 		["Felwood"] = "악령의 숲",
 		["Feralas"] = "페랄라스",
 		["The Forbidding Sea"] = "성난폭풍 해안",
@@ -821,6 +978,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Hyjal"] = "하이잘",
 		["Ironforge"] = "아이언포지",
 		["Loch Modan"] = "모단 호수",
+		["Lower Blackrock Spire"] = "검은바위 첨탑 하층",
 		["Maraudon"] = "마라우돈",
 		["Menethil Harbor"] = "메네실 항구",
 		["Molten Core"] = "화산 심장부",
@@ -858,6 +1016,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Uldaman"] = "울다만",
 		["Un'Goro Crater"] = "운고로 분화구",
 		["Undercity"] = "언더시티",
+		["Upper Blackrock Spire"] = "검은바위 첨탑 상층",
 		["Wailing Caverns"] = "통곡의 동굴",
 		["Warsong Gulch"] = "전쟁노래 협곡",
 		["Western Plaguelands"] = "서부 역병지대",
@@ -866,7 +1025,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Winterspring"] = "여명의 설원",
 		["Zul'Farrak"] = "줄파락",
 		["Zul'Gurub"] = "줄구룹",
-
+		
 		-- Burning Crusade
 		
 		-- Subzones used for displaying instances.
@@ -875,7 +1034,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Auchindoun"] = "아킨둔",
 		["The Bone Wastes"] = "해골 무덤", -- Substitute for Auchindoun, since this is what shows on the minimap.
 		["Coilfang Reservoir"] = "갈퀴송곳니 저수지",
-
+		
 		["Azuremyst Isle"] = "하늘안개 섬",
 		["Bloodmyst Isle"] = "핏빛안개 섬",
 		["Eversong Woods"] = "영원노래 숲",
@@ -890,7 +1049,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Shadow Labyrinth"] = "어둠의 미궁",
 		["Sethekk Halls"] = "세데크 전당",
 		["Hellfire Peninsula"] = "지옥불 반도",
-		["The Dark Portal"] = "The Dark Portal", -- check
+		["The Dark Portal"] = "어둠의 문",
 		["Hellfire Ramparts"] = "지옥불 성루",
 		["The Blood Furnace"] = "피의 용광로",
 		["The Shattered Halls"] = "파괴된 전당",
@@ -912,7 +1071,7 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Shattrath City"] = "샤트라스",
 		["Karazhan"] = "카라잔",
 		["Caverns of Time"] = "시간의 동굴",
-		["Zul'Aman"] = "Zul'Aman", -- check
+		["Zul'Aman"] = "줄아만",
 	}
 end)
 

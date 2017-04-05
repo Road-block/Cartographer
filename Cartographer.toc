@@ -1,7 +1,7 @@
 ## Interface: 11200
-## Notes: Addon to manipulate the map
 ## Title: Cartographer |cff7fff7f -Ace2-|r
-## Title-koKR: |CFFFF0000C|CFFFFFFFFartographer |cff7fff7f -Ace2-|r
+## Notes: Addon to manipulate the map
+## Notes-ruRU: Аддон для манипуляций с картой.
 ## Author: ckknight
 ## DefaultState: enabled
 ## LoadOnDemand: 0
@@ -41,6 +41,7 @@ Modules\Notes.lua
 Modules\Professions.lua
 Modules\ZoneInfo.lua
 Modules\InstanceNotes\enUS.lua
+Modules\InstanceNotes\ruRU.lua
 Modules\InstanceNotes\koKR.lua
 Modules\InstanceNotes\module.lua
 Modules\InstanceNotes\notes.lua

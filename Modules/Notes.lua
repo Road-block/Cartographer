@@ -65,6 +65,64 @@ L:RegisterTranslations("enUS", function() return {
 	["Size of the icons on the map"] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Notes"] = "Заметки",
+	["Module which allows you to put notes on the map."] = "Модуль позволяет вам размещать заметки на карте.",
+	
+	["White"] = "Белый",
+	["Gray"] = "Серый",
+	["Red"] = "Красный",
+	["Pink"] = "Розовый",
+	["Yellow"] = "Жёлтый",
+	["Orange"] = "Оранжевый",
+	["Green"] = "Зелёный",
+	["Lime"] = "Лайм",
+	["Blue"] = "Синий",
+	["Pale blue"] = "Бледно-голубой",
+	["Cyan"] = "Голубой",
+	["Purple"] = "Пурпурный",
+	
+	["Unknown"] = "Неизвестно",
+	["Custom icon"] = "Пользовательская иконка",
+	
+	["Create a new note"] = "Создать новую заметку",
+	["New note"] = "Новая заметка",
+	["Delete note"] = "Удалить заметку",
+	["Edit note"] = "Править заметку",
+	["Send note"] = "Отправить заметку",
+	["Send to party"] = "Отправить группе",
+	["Send to raid"] = "Отправить рейду",
+	["Send to guild"] = "Отправить гильдии",
+	["Send to player"] = "Отправить игроку",
+	
+	["Note: This may be blocked by Blizzard's spam filter and cause problems. It is recommended to send to your party/raid/guild instead."] = "Замечание: эта операция может быть заблокирована спам-фильтром Blizzard'а. Вместо этого, рекоммендуется посылать заметки группе/рейду/гильдии.",
+	
+	["X position"] = "Позиция по оси X",
+	["Y position"] = "Позиция по оси Y",
+	["Title"] = "Заголовок",
+	["Info line 1 (optional)"] = "Текстовая строка 1",
+	["Info line 2 (optional)"] = "Текстовая строка 2",
+	["Creator (optional)"] = "Создатель заметки",
+	
+	["Ctrl-Right-Click on map to add a note"] = "Ctrl+правое нажатие - создание заметки на карте",
+	
+	["%s from Guild"] = "%s из гильдии",
+	["%s from Raid"] = "%s из рейда",
+	["%s from Party"] = "%s из группы",
+	
+	["Error: %s sent you a note with an unknown zone: %q"] = "Ошибка: %s посылает вам заметку с неизвестной зоны: %q",
+	["Error: %s sent you a note at %q : %.1f, %.1f with the title %q created by %q, but you already have a note at this location."] = "Ошибка: %s посылает вам заметку %q : %.1f, %.1f с названием %q (создатель %q), однако, у вас уже есть заметка в этом месте.",
+	["%s sent you a note at %q : %.1f, %.1f with the title %q created by %q."] = "%s посылает вам заметку %q : %.2f, %.2f с названием %q (создатель %q).",
+
+	["Created by"] = "Создана ",
+	
+	["Show note creator"] = "Показывать создателя заметки",
+	["Show the `Created By:' line in notes"] = "Отображать строку `Создана:' в заметках",
+	
+	["Icon size"] = "Размер иконок",
+	["Size of the icons on the map"] = "Управление размером иконок заметок на карте",
+} end)
+
 L:RegisterTranslations("koKR", function() return {
 	["Notes"] = "노트",
 	["Module which allows you to put notes on the map."] = "지도에 노트를 작성합니다.",
@@ -1283,7 +1341,7 @@ do
 					WorldMapTooltip:AddLine(this.info2, this.info2R, this.info2G, this.info2B)
 				end
 				if this.creator then
-					WorldMapTooltip:AddDoubleLine("Created by", this.creator)
+					WorldMapTooltip:AddDoubleLine(L["Created by"], this.creator)
 				end
 				WorldMapTooltip:Show()
 			end

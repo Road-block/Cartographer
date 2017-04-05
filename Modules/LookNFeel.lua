@@ -35,6 +35,34 @@ L:RegisterTranslations("enUS", function() return {
 	["Make the player's arrow on the World Map 1.5 times larger than normal"] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Look 'n' Feel"] = "Наглядность и восприятие",
+	["Module which allows you to change the transparency, position, and scale of the world map."] = "Модуль позволяет настраивать прозрачность, позиции и масштаб карты мира.",
+	
+	["Transparency"] = "Прозрачность",
+	["Transparency of the World Map"] = "Прозрачность карты мира",
+	
+	["Overlay transparency"] = "Прозрачность наложения",
+	["Transparency of World Map overlays"] = "Прозрачность наложения карты мира",
+	
+	["Scale"] = "Масштаб",
+	["Scale of the World Map"] = "Масштаб карты мира",
+	
+	["Tooltip scale"] = "Масштаб подсказки",
+	["Scale of the World Map tooltip"] = "Масштаб подсказки на карте мира",
+	
+	["Shift-MouseWheel to change transparency"] = "Shift+Колесо мыши - изменение прозрачности",
+	["Ctrl-MouseWheel to change scale"] = "Ctrl+Колесо мыши - изменение масштаба",
+	
+	["Lock the World Map"] = "Закрепить карту мира",
+	
+	["Close with escape"] = "Закрыть с клавишей Escape",
+	["Close the World Map when pressing the escape button"] = "При нажатии кнопки Escape закрывает карту мира",
+	
+	["Large player arrow"] = "Большая стрелка персонажа",
+	["Make the player's arrow on the World Map 1.5 times larger than normal"] = "Делает отображение стрелки персонажа на карте мира в 1.5 раз больше нормальной",
+} end)
+
 L:RegisterTranslations("koKR", function() return {
 	["Look 'n' Feel"] = "모양",
 	["Module which allows you to change the transparency, position, and scale of the world map."] = "세계 지도의 투명도, 위치 그리고 크기등을 변경합니다.",

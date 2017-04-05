@@ -14,6 +14,13 @@ L:RegisterTranslations("enUS", function() return {
 	["Instances"] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Instance Maps"] = "Карты подземелий",
+	["Module which provides maps of instances."] = "Модуль включает отображение карт подземелий.",
+	
+	["Instances"] = "Подземелья",
+} end)
+
 L:RegisterTranslations("deDE", function() return {
 --	["Instance Maps"] = true,
 --	["Module which provides maps of instances."] = true,

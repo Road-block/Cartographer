@@ -12,6 +12,11 @@ L:RegisterTranslations("enUS", function() return {
 	["Module which turns all your party's and your raid's POIs into circles colored based on class, and shows a number on them based on their raid group."] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Group Colors"] = "Цвета групп",
+	["Module which turns all your party's and your raid's POIs into circles colored based on class, and shows a number on them based on their raid group."] = "Модуль включает отображение всех членов вашей группы и рейда кружками раскрашенных по цвету класса, и отображает номер их группы в рейде.",
+} end)
+
 L:RegisterTranslations("deDE", function() return {
 --	["Group Colors"] = true,
 --	["Module which turns all your party's and your raid's POIs into circles colored based on class, and shows a number on them based on their raid group."] = true,

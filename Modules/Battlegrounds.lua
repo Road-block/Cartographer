@@ -12,6 +12,11 @@ L:RegisterTranslations("enUS", function() return {
 	["Module which provides maps of battlegrounds."] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Battlegrounds"] = "Поля сражений",
+	["Module which provides maps of battlegrounds."] = "Модуль отображает карты полей сражений.",
+} end)
+
 L:RegisterTranslations("deDE", function() return {
 --	["Battlegrounds"] = true,
 --	["Module which provides maps of battlegrounds."] = true,

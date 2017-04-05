@@ -14,6 +14,13 @@ L:RegisterTranslations("enUS", function() return {
 	["Unable to load addon `%s': %s"] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Professions"] = "Профессии",
+
+	["Stub for loading Cartographer module addons based on your professions."] = "Заглушка для загрузки модулей Картографа, основанная на ваших профессиях",
+	["Unable to load addon `%s': %s"] = "Невозможно загрузить аддон `%s': %s",
+} end)
+
 L:RegisterTranslations("koKR", function() return {
 	["Professions"] = "전문 기술",
 

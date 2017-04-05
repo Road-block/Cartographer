@@ -19,6 +19,14 @@ L:RegisterTranslations("enUS", function() return {
 	["Change the color of the unexplored areas"] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Foglight"] = "Противотуман",
+	["Module to show unexplored areas on the map."] = "Модуль отображает неисследованные территории на карте.",
+	
+	["Unexplored color"] = "Цвет тумана",
+	["Change the color of the unexplored areas"] = "Изменить цвет неисследованных территорий",
+} end)
+
 L:RegisterTranslations("koKR", function() return {
 	["Foglight"] = "미 탐색 지역",
 	["Module to show unexplored areas on the map."] = "지도에 탐험하지 못한 지역을 보여줍니다.",

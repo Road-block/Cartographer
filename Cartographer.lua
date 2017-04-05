@@ -25,6 +25,19 @@ L:RegisterTranslations("enUS", function() return {
 	["Cosmic map"] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Active"] = "Активен",
+	["Suspend/resume this module."] = "Отключить/Запустить данный модуль",
+	
+	["Right-Click on map to zoom out"] = "Правое нажатие по карте - уменьшение масштаба",
+	["Left-Click on map to zoom in"] = "Левое нажатие по карте - увеличение масштаба",
+	
+	["Go to %s"] = "Перейти на %s",
+	
+	["Azeroth"] = "Азерот",
+	["Cosmic map"] = "Карта космоса",
+} end)
+
 L:RegisterTranslations("deDE", function() return {
 --	["Toggle"] = true,
 --	["Toggle the module on and off."] = true,

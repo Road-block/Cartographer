@@ -15,6 +15,14 @@ L:RegisterTranslations("enUS", function() return {
 	["%d-man"] = true,
 } end)
 
+L:RegisterTranslations("ruRU", function() return {
+	["Zone Info"] = "Информация о зоне",
+	["Module which on hovering over a zone, will show the levels of the zone, the instances in the zone, their levels, and the number of men the instance is made for (e.g. 5-man, 40-man)."] = "Модуль, который при наводке курсора на зону отображает уровни зоны, подземелья, их уровни и максимальное число человек доступное в подземельях (пример: 5-чел, 40-чел)",
+	
+	["Instances"] = "Подземелья",
+	["%d-man"] = "%d-чел.",
+} end)
+
 L:RegisterTranslations("koKR", function() return {
 	["Zone Info"] = "지역 정보",
 	["Module which on hovering over a zone, will show the levels of the zone, the instances in the zone, their levels, and the number of men the instance is made for (e.g. 5-man, 40-man)."] = "해당 지역에 위치한 인던 및 참여할 수 있는 인원(예. 5명, 40명)등을 보여줍니다.",
