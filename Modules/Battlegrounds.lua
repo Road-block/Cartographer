@@ -44,7 +44,6 @@ L:RegisterTranslations("zhCN", function() return {
 
 Cartographer_Battlegrounds = Cartographer:NewModule("Battlegrounds", "AceHook-2.1", "AceEvent-2.0")
 
-local lua51 = loadstring("return function(...) return ... end") and true or false
 local BZ = AceLibrary("Babble-Zone-2.2")
 local Tourist = AceLibrary("Tourist-2.0")
 
@@ -72,7 +71,6 @@ function Cartographer_Battlegrounds:OnInitialize()
 		["Warsong Gulch"] = BZ["Warsong Gulch"],
 		["Arathi Basin"] = BZ["Arathi Basin"],
 		["Alterac Valley"] = BZ["Alterac Valley"],
-		["Eye of the Storm"] = lua51 and BZ["Eye of the Storm"] or nil,
 	}
 	
 	Cartographer.gotoOptions.args.Battlegrounds = {
@@ -113,8 +111,6 @@ function Cartographer_Battlegrounds:ShowBattleground(name)
 		name = "ArathiBasin"
 	elseif name == "Alterac Valley" then
 		name = "AlteracValley"
-	elseif lua51 and name == "Eye of the Storm" then
-		name = "NetherstormArena"
 	else
 		error(string.format("Cannot show unknown battleground %q", name), 2)
 	end

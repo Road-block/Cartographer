@@ -10,7 +10,7 @@
 ## X-Category: Map
 ## X-eMail: ckknight@gmail.com
 ## X-Website: http://ckknight.wowinterface.com/
-## Version: 2.01
+## Version: 2.02
 
 Libs\AceLibrary\AceLibrary.lua
 Libs\AceOO-2.0\AceOO-2.0.lua
