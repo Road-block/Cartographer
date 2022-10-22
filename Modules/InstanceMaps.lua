@@ -168,8 +168,6 @@ function Cartographer_InstanceMaps:ShowInstanceFrame()
 					SetMapZoom(1)
 				elseif Tourist:IsInEasternKingdoms(zone) then
 					SetMapZoom(2)
-				elseif Tourist:IsInOutland(zone) then
-					SetMapZoom(3)
 				else
 					SetMapZoom(0)
 				end
@@ -259,8 +257,6 @@ function Cartographer_InstanceMaps:ShowInstance(realZone)
 		SetMapZoom(1, 1)
 	elseif Tourist:IsInEasternKingdoms(zone) then
 		SetMapZoom(2, 1)
-	elseif Tourist:IsInOutland(zone) then
-		SetMapZoom(3, 1)
 	else
 		SetMapZoom(0)
 	end
